@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="css/F-kadai.css">
+        <meta name="author" content="Kazuki01ss" />
+        <meta name="keywords" content="html, css, javascript" />
+        <title>American Fighter</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="top">アメリカで現在運用されている戦闘機</h1>
+        </header>
+    </body>
+
+    <body>
+        <div>
+            課題のためにpixabayと言うサイトで商用利用無料かつ帰属表示の必要なしの画像を入手し, 本ページでは取り扱っています.
+            <img src="img/f22-hi.jpg" width="1000" title="F-22" alt="F-22"><br>    
+            アメリカの陸軍, 海軍, 空軍が現在運用していると思われる機体をピックアップしました. 抜けているものがあるかもしれませんが目をつぶっていただけると幸いです.
+            また今回は戦闘機に限定しているため, 局地制圧用攻撃機であるAC-130や爆撃機であるB-52などは省かせていただきます.
+        </div>
+
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>F-15 イーグル</th>
+                <th>A-10 サンダーボルトⅡ</th>
+                <th>F-16 ファイティング・ファルコン</th>
+                <th>F/A-18E/F スーパーホーネット</th>
+                <th>F-22 ラプター</th>
+                <th>F-35 ライトニングⅡ</th>
+            </tr>
+            <tr>
+                <th>機体画像</th>
+                <td><img src="img/f15.jpg" width="160" title="F-15" alt="F-15"></td>
+                <td><img src="img/a10.jpg" width="160" title="A-10" alt="A-10"></td>
+                <td><img src="img/f16.jpg" width="160" title="F-16" alt="F-16"></td>
+                <td><img src="img/f18.jpg" width="160" title="F-18" alt="F-18"></td>
+                <td><img src="img/f22.jpg" width="160" title="F-22" alt="F-22"></td>
+                <td><img src="img/f35.jpg" width="160" title="F-35" alt="F-35"></td>
+            </tr>
+            <tr>
+                <th>機体説明</th>
+                <td>1976年に運用が開始され, 高い空対空性能を持ち, 空中戦における被撃墜記録がないとされる.</td>
+                <td>1977年に運用が開始され, 高い対地攻撃性能と旋回性能を持ち, 近接航空支援機として運用される.</td>
+                <td>1978年に運用が開始され, 低コストで生産性が高く, 装備を変更することで様々な任務に対応できる機体とされる.</td>
+                <td>1999年に運用が開始され, F-14の退役後, 空母航空団の主力として活躍, シリアで空戦を行いSu-22を撃墜したとされる.</td>
+                <td>2005年に運用が開始され, 世界初のステルス戦闘機であり, 超音速巡行や短距離離着陸も可能で高い機動性を持つ.</td>
+                <td>2015年に運用が開始され, 幅広い任務遂行能力と高いステルス性を持つ多用途戦闘機であり, 垂直着陸が出来る型もある.</td>
+            </tr>
+        </table>
+
+        <canvas id="lineChart"></canvas>
+        ここからいかにF-16の生産性が高かったかということがわかり, 他にもかの有名なF-22がコストの高さから195機しか生産されていないという事実も伺えます.<br>
+
+        <div id="unitcost">
+            1キロ飛ぶ時の1座席当たりにかかったコストをユニットコストと言います. イメージは飛ぶ時のコスパですね.
+            <h2>各機のユニットコスト</h2>
+            <button type="button" onclick="fighter(1)">F-15</button>
+            <button type="button" onclick="fighter(2)">A-10</button>
+            <button type="button" onclick="fighter(3)">F-16</button>
+            <button type="button" onclick="fighter(4)">F/A-18E/F</button>
+            <button type="button" onclick="fighter(5)">F-22</button>
+            <button type="button" onclick="fighter(6)">F-35</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js" integrity="sha512-lUsN5TEogpe12qeV8NF4cxlJJatTZ12jnx9WXkFXOy7yFbuHwYRTjmctvwbRIuZPhv+lpvy7Cm9o8T9e+9pTrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="js/F-kadai.js"></script>
+
+        <a href="#top">トップに戻る</a>
+
+        <footer>
+            &copy; 2021 Kazuki01ss
+        </footer>
+    </body>
+
+</html>
